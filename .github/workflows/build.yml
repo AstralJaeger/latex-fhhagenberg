@@ -9,19 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      actions: read
-      checks: read
-      contents: write
-      deployments: read
       id-token: write
-      issues: read
-      discussions: read
       packages: write
-      pages: read
-      pull-requests: read
-      repository-projects: read
-      security-events: read
-      statuses: read
 
     steps:
       - name: Checkout repository
@@ -39,11 +28,6 @@ jobs:
         with:
           latexmk_shell_escape: true
           root_file: main.tex
-
-      - name: Cache Docker layers
-        uses: satackey/action-docker-layer-caching@v0.0.11
-        # Ignore the failure of a step and avoid terminating the job.
-        continue-on-error: true
 
       - name: Upload LaTeX logs
         if: always()
