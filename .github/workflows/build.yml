@@ -39,6 +39,13 @@ jobs:
         with:
           latexmk_shell_escape: true
           root_file: main.tex
+      
+      - name: Upload LaTeX logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: LaTeX logs
+          path: main.log
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v4

@@ -18,17 +18,6 @@
 \usepackage{minted}
 \usemintedstyle{vs}
 
-\lsbset{
-    frame=tb,
-    aboveskip=3mm,
-    belowskip=3mm,
-    columns=flexible,
-    basicstyle={\small\ttfamily},
-    numbers=none,
-    breaklines=true,
-    tabsize=3
-}
-
 % Set default font to OpenSans
 \renewcommand*\familydefault{\sfdefault}
 
@@ -64,7 +53,6 @@
         {\includegraphics[height=3cm]{fh-logo}}\\[1cm]
         {\LARGE \thetitle}\\[0.5cm]
         {\large \theauthor}\\
-        \href{mailto:97hilfel@gmail.com}{97hilfel@gmail.com}\\
     \end{center}
     \tableofcontents
     \clearpage
@@ -78,14 +66,15 @@
 }
 
 % Author and subject
-\author{Felix Hillebrand}
-\newcommand{\subject}{SSD4UE}
+\author{John Doe} % TODO: Change Autor
+\newcommand{\subject}{Exercise in Exerciseing} % TODO: Change Subject
 
 \graphicspath{ {./images/} }
 
 % Main document
 \begin{document}
 
+ % TODO: Change Title
 \title{Subject~-~Exercise}
 \coverpage
 
@@ -108,6 +97,16 @@
 \newpage
 
 \chapter{Legal}
-Die Ausarbeitung der Aufgabe wurde durch \texttt{OpenAI - GPT-4.5 Turbo}, \texttt{OpenAI - GPT-4.5 Vision}, \texttt{Anthropic -- Claude 3 Opus},  \texttt{Kagi - FastGPT} mit mehreren unterschiedlichen Prompts und Custom Instructions unterstützt.
+Die Ausarbeitung der Aufgabe wurde durch:
+
+\begin{itemize}
+    \item \texttt{OpenAI - GPT-4.5 Turbo}
+    \item \texttt{OpenAI - GPT-4.5 Vision}
+    \item \texttt{OpenAI - GPT-4o}
+    \item \texttt{Anthropic -- Claude 3 Opus}
+\end{itemize}
+
+
+mit mehreren unterschiedlichen Prompts und Custom Instructions unterstützt.
 
 \end{document}
