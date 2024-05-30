@@ -55,7 +55,7 @@ jobs:
       - name: Create Bundle
         uses: astraljaeger/bundle-action@v1
         with:
-          bundleignore: ".bundleignore"
+          bundleInclude: ".bundleignore"
           bundle: ./bundle.zip
           overrideExisting: true
 
