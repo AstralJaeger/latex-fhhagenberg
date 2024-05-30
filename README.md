@@ -1,6 +1,6 @@
 # latex-fhhagenberg
 
-![Build PDF](https://github.com/AstralJaeger/latex-fhhagenberg/actions/workflows/build.yaml/badge.svg?branch=master)
+[![Build PDF](https://github.com/AstralJaeger/latex-fhhagenberg/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/AstralJaeger/latex-fhhagenberg/actions/workflows/build.yml)
 
  Latex template for assignments from FH Hagenberg.
 
